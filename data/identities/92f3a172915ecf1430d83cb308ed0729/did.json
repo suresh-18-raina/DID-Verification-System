@@ -1,0 +1,22 @@
+{
+  "id": "did:local:92f3a172915ecf1430d83cb308ed0729",
+  "created": "2026-10-13T15:41:13Z",
+  "profile": {
+    "name": "Asha Rao",
+    "role": "holder"
+  },
+  "verificationMethod": [
+    {
+      "id": "did:local:92f3a172915ecf1430d83cb308ed0729#key-1",
+      "type": "Ed25519VerificationKey",
+      "controller": "did:local:92f3a172915ecf1430d83cb308ed0729",
+      "publicKeyHex": "fa6b7f7eac2190a952dfffc39c08dad035b5f11ea4ea886c72a7121953c46f28"
+    }
+  ],
+  "authentication": [
+    "did:local:92f3a172915ecf1430d83cb308ed0729#key-1"
+  ],
+  "assertionMethod": [
+    "did:local:92f3a172915ecf1430d83cb308ed0729#key-1"
+  ]
+}

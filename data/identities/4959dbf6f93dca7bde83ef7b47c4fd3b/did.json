@@ -1,0 +1,22 @@
+{
+  "id": "did:local:4959dbf6f93dca7bde83ef7b47c4fd3b",
+  "created": "2026-10-13T15:41:43Z",
+  "profile": {
+    "name": "srishanth",
+    "role": "issuer"
+  },
+  "verificationMethod": [
+    {
+      "id": "did:local:4959dbf6f93dca7bde83ef7b47c4fd3b#key-1",
+      "type": "Ed25519VerificationKey",
+      "controller": "did:local:4959dbf6f93dca7bde83ef7b47c4fd3b",
+      "publicKeyHex": "41b510201e87716e677edd31400eb8e84106f96f7f4b07e62005821f3be56bc9"
+    }
+  ],
+  "authentication": [
+    "did:local:4959dbf6f93dca7bde83ef7b47c4fd3b#key-1"
+  ],
+  "assertionMethod": [
+    "did:local:4959dbf6f93dca7bde83ef7b47c4fd3b#key-1"
+  ]
+}

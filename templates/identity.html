@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ identity.name }}{% endblock %}
+{% block content %}
+<header class="page-h"><a class="back" href="/identities">All identities</a>
+  <h1>{{ identity.name }} <span class="pill {{ identity.role }}">{{ identity.role }}</span></h1></header>
+<div class="card kv">
+  <div><span>DID</span><code class="copy" data-copy="{{ identity.did }}" title="Click to copy">{{ identity.did }}</code></div>
+  <div><span>Public key</span><code class="copy" data-copy="{{ identity.public_key }}" title="Click to copy">{{ identity.public_key }}</code></div>
+  <div><span>Key type</span><code>Ed25519</code></div>
+  <div><span>Created</span><code>{{ identity.created }}</code></div>
+  <div><span>Private key</span><code>Stored in data/identities/{{ identity.folder }}/private_key.pem · never displayed</code></div>
+</div>
+<div class="row" style="margin:1rem 0">
+  {% if identity.role == 'issuer' %}<a class="btn primary" href="/issue-credential">Issue a credential</a>{% endif %}
+  <a class="btn ghost" href="/blockchain">View ledger</a>
+</div>
+<h2>DID Document</h2>
+<p class="hint">This public file is what verifiers use to find the public key.</p>
+<pre class="code">{{ document }}</pre>
+{% if identity.role == 'issuer' %}
+<h2>Credentials issued ({{ issued|length }})</h2>
+{% for c in issued %}
+<a class="item" href="/verify?id={{ c.credential_id }}"><div><strong>{{ c.subject_name }}</strong> · {{ c.course }}<div class="mono small">{{ c.credential_id }}</div></div>
+  {% if c.revoked %}<span class="pill bad">revoked</span>{% else %}<span class="chev">Verify</span>{% endif %}</a>
+{% else %}<p class="hint">Nothing issued yet.</p>{% endfor %}
+{% endif %}
+{% endblock %}

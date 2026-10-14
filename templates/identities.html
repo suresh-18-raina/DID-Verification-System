@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Identities{% endblock %}
+{% block content %}
+<header class="page-h"><h1>Identities</h1><p class="lead">Everyone created on this computer. Private keys never appear here.</p></header>
+{% if identities %}
+<div class="list">
+  {% for i in identities %}
+  <a class="item" href="/identity/{{ i.folder }}">
+    <div><strong>{{ i.name }}</strong> <span class="pill {{ i.role }}">{{ i.role }}</span>
+      <div class="mono small">{{ i.did }}</div></div>
+    <span class="chev" aria-hidden="true">View</span>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty"><h3>No identities yet</h3><p>Create an issuer and a holder to get started.</p><a class="btn primary" href="/create-identity">Create identity</a></div>
+{% endif %}
+{% endblock %}

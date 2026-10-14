@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Prove who issued a credential — and that nobody changed it.</h1>
+  <p class="lead">This app shows how a digital identity can be checked with cryptography alone: no passwords, no central database. Everything runs on your computer.</p>
+  <div class="row">
+    <button class="btn primary big" id="demo-btn">Run the guided demo</button>
+    <a class="btn ghost big" href="/create-identity">Start from scratch</a>
+  </div>
+  <p class="hint">The demo creates a university (issuer), a student (holder) and one signed credential, then opens the verifier.</p>
+</section>
+
+<section class="stats" aria-label="Current data">
+  <div><strong>{{ nav_stats.identities }}</strong><span>identities</span></div>
+  <div><strong>{{ nav_stats.credentials }}</strong><span>credentials</span></div>
+  <div><strong>{{ nav_stats.blocks }}</strong><span>ledger blocks</span></div>
+  <div class="{{ 'good' if nav_stats.chain_valid else 'bad' }}"><strong>{{ 'Valid' if nav_stats.chain_valid else 'Broken' }}</strong><span>ledger status</span></div>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <ol class="flow">
+    <li><h3>Create an identity</h3><p>The app makes a <b>key pair</b>. The private key stays on this computer. The public key goes into a public <b>DID Document</b>, and the DID (like <code>did:local:3f9a…</code>) is built from it.</p></li>
+    <li><h3>Issue a credential</h3><p>The issuer writes the student's details, turns them into a <b>SHA-256 hash</b> (a fingerprint) and <b>signs</b> that fingerprint with its private key.</p></li>
+    <li><h3>Record it</h3><p>The fingerprint is stored as a block on a small <b>local ledger</b>. Every block holds the hash of the block before it, so edits can't be hidden.</p></li>
+    <li><h3>Verify it</h3><p>Anyone with the credential can run <b>8 checks</b> using only public information. Change one letter and the checks fail.</p></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Key words in plain language</h2>
+  <dl class="terms">
+    <div><dt>DID</dt><dd>Decentralized Identifier: an ID you create yourself from your own public key.</dd></div>
+    <div><dt>Key pair</dt><dd>Two linked keys. The private one signs; the public one checks signatures.</dd></div>
+    <div><dt>Hash</dt><dd>A short fingerprint of data. Any change gives a completely different fingerprint.</dd></div>
+    <div><dt>Digital signature</dt><dd>Proof that the owner of a private key approved exactly this data.</dd></div>
+    <div><dt>Ledger</dt><dd>A chain of blocks where each block locks in the one before it.</dd></div>
+    <div><dt>Revocation</dt><dd>The issuer's signed notice that a credential is no longer valid.</dd></div>
+  </dl>
+</section>
+
+<section class="danger-zone">
+  <button class="linkbtn" id="reset-btn">Reset all demo data</button>
+  <span class="hint">Deletes every identity, key, credential and ledger block on this computer.</span>
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Ledger{% endblock %}
+{% block content %}
+<header class="page-h"><span class="step-tag">Step 4</span><h1>The ledger</h1>
+<p class="lead">Each block stores the hash of the block before it. Change an old block and every link after it breaks.</p></header>
+
+<div id="chain-banner" class="banner">Checking…</div>
+
+<div class="card lab">
+  <h3>Tamper lab</h3>
+  <p class="hint">Edit a block on purpose and watch the validator catch it. A backup is kept so you can undo it.</p>
+  <div class="row wrap">
+    <label class="field inline"><span>Block to edit</span><select id="lab-index"></select></label>
+    <label class="check"><input type="checkbox" id="lab-recompute"> Attacker also recalculates that block's hash</label>
+    <button class="btn danger" id="lab-tamper">Tamper</button>
+    <button class="btn ghost" id="lab-restore">Restore original</button>
+  </div>
+  <p id="lab-note" class="hint"></p>
+</div>
+
+<ol id="chain" class="chain" aria-label="Ledger blocks"></ol>
+{% endblock %}

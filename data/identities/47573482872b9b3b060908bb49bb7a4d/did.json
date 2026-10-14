@@ -1,0 +1,22 @@
+{
+  "id": "did:local:47573482872b9b3b060908bb49bb7a4d",
+  "created": "2026-10-06T13:01:31Z",
+  "profile": {
+    "name": "raina",
+    "role": "holder"
+  },
+  "verificationMethod": [
+    {
+      "id": "did:local:47573482872b9b3b060908bb49bb7a4d#key-1",
+      "type": "Ed25519VerificationKey",
+      "controller": "did:local:47573482872b9b3b060908bb49bb7a4d",
+      "publicKeyHex": "926163420a07378595c854e3c759aab019656d4ca41d7efb62be69a1cf46f7a6"
+    }
+  ],
+  "authentication": [
+    "did:local:47573482872b9b3b060908bb49bb7a4d#key-1"
+  ],
+  "assertionMethod": [
+    "did:local:47573482872b9b3b060908bb49bb7a4d#key-1"
+  ]
+}

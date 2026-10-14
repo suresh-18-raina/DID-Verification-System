@@ -1,0 +1,22 @@
+{
+  "id": "did:local:f8403015534f2099d1c846fdb778058a",
+  "created": "2026-10-07T06:21:24Z",
+  "profile": {
+    "name": "surri",
+    "role": "issuer"
+  },
+  "verificationMethod": [
+    {
+      "id": "did:local:f8403015534f2099d1c846fdb778058a#key-1",
+      "type": "Ed25519VerificationKey",
+      "controller": "did:local:f8403015534f2099d1c846fdb778058a",
+      "publicKeyHex": "94c650d92d3aabc1cccd93902b0e2ed772b01076f7106648b15f8995abaa71d8"
+    }
+  ],
+  "authentication": [
+    "did:local:f8403015534f2099d1c846fdb778058a#key-1"
+  ],
+  "assertionMethod": [
+    "did:local:f8403015534f2099d1c846fdb778058a#key-1"
+  ]
+}

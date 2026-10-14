@@ -1,0 +1,22 @@
+{
+  "id": "did:local:1ac04f379b2cbc805545d4f14d3edf02",
+  "created": "2026-10-06T13:00:35Z",
+  "profile": {
+    "name": "suresh",
+    "role": "issuer"
+  },
+  "verificationMethod": [
+    {
+      "id": "did:local:1ac04f379b2cbc805545d4f14d3edf02#key-1",
+      "type": "Ed25519VerificationKey",
+      "controller": "did:local:1ac04f379b2cbc805545d4f14d3edf02",
+      "publicKeyHex": "cbe26b5902d013a4c0de9c11da5b7b250f6d786b197c47a30ac132110d35a61b"
+    }
+  ],
+  "authentication": [
+    "did:local:1ac04f379b2cbc805545d4f14d3edf02#key-1"
+  ],
+  "assertionMethod": [
+    "did:local:1ac04f379b2cbc805545d4f14d3edf02#key-1"
+  ]
+}

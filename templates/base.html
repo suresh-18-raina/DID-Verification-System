@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}DID Verification{% endblock %} · DID Verification System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body data-page="{{ page }}">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="side">
+      <a class="brand" href="/">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2BB3C0"/><path d="M16 6l8 3v6c0 5-3.4 8.6-8 11-4.6-2.4-8-6-8-11V9z" fill="none" stroke="#0B2236" stroke-width="2.2" stroke-linejoin="round"/><path d="M12.5 16l2.6 2.6 4.6-5" fill="none" stroke="#0B2236" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>DID Verification<small>Cryptography PBL</small></span>
+      </a>
+      <nav aria-label="Main">
+        <a href="/" class="{{ 'on' if page=='home' }}">Home</a>
+        <p class="nav-h">Follow the steps</p>
+        <a href="/create-identity" class="step {{ 'on' if page=='create' }}"><i>1</i>Create identity</a>
+        <a href="/issue-credential" class="step {{ 'on' if page=='issue' }}"><i>2</i>Issue credential</a>
+        <a href="/verify" class="step {{ 'on' if page=='verify' }}"><i>3</i>Verify credential</a>
+        <a href="/blockchain" class="step {{ 'on' if page=='ledger' }}"><i>4</i>Ledger</a>
+        <p class="nav-h">Browse</p>
+        <a href="/identities" class="{{ 'on' if page=='identities' }}">Identities <b>{{ nav_stats.identities }}</b></a>
+        <a href="/credentials" class="{{ 'on' if page=='credentials' }}">Credentials <b>{{ nav_stats.credentials }}</b></a>
+      </nav>
+      <div class="side-foot">
+        <span class="dot {{ 'ok' if nav_stats.chain_valid else 'bad' }}"></span>
+        {% if nav_stats.chain_valid %}Ledger valid · {{ nav_stats.blocks }} blocks{% else %}Ledger tampered!{% endif %}
+      </div>
+    </aside>
+    <main id="main" class="main">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "id": "did:local:5cf2416e04db66659249881e6fbc58f8",
+  "created": "2026-10-14T05:38:09Z",
+  "profile": {
+    "name": "hassaan",
+    "role": "issuer"
+  },
+  "verificationMethod": [
+    {
+      "id": "did:local:5cf2416e04db66659249881e6fbc58f8#key-1",
+      "type": "Ed25519VerificationKey",
+      "controller": "did:local:5cf2416e04db66659249881e6fbc58f8",
+      "publicKeyHex": "14bab4e85e01e6b05c08e4f22e2a1c4c608f34cdbcb34983846c0e4635e42ca7"
+    }
+  ],
+  "authentication": [
+    "did:local:5cf2416e04db66659249881e6fbc58f8#key-1"
+  ],
+  "assertionMethod": [
+    "did:local:5cf2416e04db66659249881e6fbc58f8#key-1"
+  ]
+}

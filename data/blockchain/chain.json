@@ -1,0 +1,372 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-10-01T05:55:05Z",
+    "type": "GENESIS",
+    "data": {
+      "message": "DID Verification System ledger created"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "0ed91278429980ada763fbe7469dff0a1d75cd8523921e404a7b6199056cd5a6"
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-10-01T05:55:57Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:8659b2a3508f71bfde13e263a2b5fb07",
+      "role": "issuer",
+      "did_document_hash": "bc5f9779259f139d702dfe7490dc53600e93b808ca6662dda38def12bca5daf9"
+    },
+    "previous_hash": "0ed91278429980ada763fbe7469dff0a1d75cd8523921e404a7b6199056cd5a6",
+    "hash": "1b1c11ed52db7a3c5b13cf742a711eecceedc57593709c9ac87793511feacdd4"
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-10-01T05:55:57Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:b49961e4419787fa26b6439be0148b5b",
+      "role": "holder",
+      "did_document_hash": "d0d1f37de7962922b1f5bbeb0367876bbd71a43d1e90433724d8f2ec52b67cd7"
+    },
+    "previous_hash": "1b1c11ed52db7a3c5b13cf742a711eecceedc57593709c9ac87793511feacdd4",
+    "hash": "4ff86a0e6013eee7eaa09b67b059eb212a2f60298716b26da5762f577c63484f"
+  },
+  {
+    "index": 3,
+    "timestamp": "2026-10-01T05:55:57Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261001-18bf45ed",
+      "credential_hash": "b8fc4c1be50b838f28cefe667ec3d9768c4ca034a45fc38ca02270f0f51a63d6",
+      "issuer": "did:local:8659b2a3508f71bfde13e263a2b5fb07"
+    },
+    "previous_hash": "4ff86a0e6013eee7eaa09b67b059eb212a2f60298716b26da5762f577c63484f",
+    "hash": "2cf66ab0644772d9678328695f287262966dc1c92575e1f65a269337134b98a7"
+  },
+  {
+    "index": 4,
+    "timestamp": "2026-10-06T13:00:35Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:1ac04f379b2cbc805545d4f14d3edf02",
+      "role": "issuer",
+      "did_document_hash": "69cee233c8ed134bccabdde133f746aed63be82fd40dfb708dbed3c26c095bc1"
+    },
+    "previous_hash": "2cf66ab0644772d9678328695f287262966dc1c92575e1f65a269337134b98a7",
+    "hash": "d7b9aa40d92749054e903e55630f1332f836b65e17c156ee4b83a2f5aa2cf6bb"
+  },
+  {
+    "index": 5,
+    "timestamp": "2026-10-06T13:01:31Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:47573482872b9b3b060908bb49bb7a4d",
+      "role": "holder",
+      "did_document_hash": "bf77533139278b1e1a6405dbc17343a4954c73b650cb890cdb1865fffcc98648"
+    },
+    "previous_hash": "d7b9aa40d92749054e903e55630f1332f836b65e17c156ee4b83a2f5aa2cf6bb",
+    "hash": "9715c5ebebe40726ed9a287df035d79ae22eb2098f9e9ea6654cefbb62af08da"
+  },
+  {
+    "index": 6,
+    "timestamp": "2026-10-06T13:03:09Z",
+    "type": "CREDENTIAL_REVOKED",
+    "data": {
+      "credential_id": "cred-20261001-18bf45ed",
+      "issuer": "did:local:8659b2a3508f71bfde13e263a2b5fb07",
+      "signature": "6a47218931a78ea88ce6b0ccdc55fa075d9bc0ee44ca36c8bab82cf05db4aa5f62fc562f1ba8d7ddaf726f7c0c2393a8c79baba4ce2f198dea302fdf10047d0e"
+    },
+    "previous_hash": "9715c5ebebe40726ed9a287df035d79ae22eb2098f9e9ea6654cefbb62af08da",
+    "hash": "e8b44f0620fd0aee8e1211627ef50eacecf613f4a99443ede93b29e2e1430366"
+  },
+  {
+    "index": 7,
+    "timestamp": "2026-10-06T13:04:32Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261006-445040c2",
+      "credential_hash": "53a71b9c921d85a39c476f0922d871728dab1451a4ab39b971f01af7698249bc",
+      "issuer": "did:local:1ac04f379b2cbc805545d4f14d3edf02"
+    },
+    "previous_hash": "e8b44f0620fd0aee8e1211627ef50eacecf613f4a99443ede93b29e2e1430366",
+    "hash": "54dcc0915eefeb4a2c6628fd51573bf2ccd0065d2cad8069cc1e1d236696bba7"
+  },
+  {
+    "index": 8,
+    "timestamp": "2026-10-07T06:21:24Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:f8403015534f2099d1c846fdb778058a",
+      "role": "issuer",
+      "did_document_hash": "8755b78e95cbe58a14adcc154082ea2a0c3f1ba3c8841f9cf696069e0a5100d6"
+    },
+    "previous_hash": "54dcc0915eefeb4a2c6628fd51573bf2ccd0065d2cad8069cc1e1d236696bba7",
+    "hash": "5f58c72afe279c3ff249697045ec499170c3c06c36feaace5586e9ba83e15423"
+  },
+  {
+    "index": 9,
+    "timestamp": "2026-10-07T06:22:06Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261007-b996febd",
+      "credential_hash": "16e82c3dcdef4c5e9ad8ddfe28ce155fee902d26571c87acba5397c66dc6be88",
+      "issuer": "did:local:f8403015534f2099d1c846fdb778058a"
+    },
+    "previous_hash": "5f58c72afe279c3ff249697045ec499170c3c06c36feaace5586e9ba83e15423",
+    "hash": "0723dd4264883609da5d98c3e97f44eecac8b9ef055b1748225ac5eb1698bc5a"
+  },
+  {
+    "index": 10,
+    "timestamp": "2026-10-07T06:24:13Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:396bd142ad7d08ce0ca8e49a1e09a1f4",
+      "role": "issuer",
+      "did_document_hash": "e5d835f8b0b3937670f06933500a33def370ad1f60b840b5c7068ab654c7f821"
+    },
+    "previous_hash": "0723dd4264883609da5d98c3e97f44eecac8b9ef055b1748225ac5eb1698bc5a",
+    "hash": "2938d1329fd0ee408423f3a43402c247a09f2d3dbd621505dc301d1fb547b451"
+  },
+  {
+    "index": 11,
+    "timestamp": "2026-10-07T06:24:50Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261007-15ee014a",
+      "credential_hash": "cd26e9e1841a13addc46b4ba21082048a12baa57806923b1b1ff569ec3b2979a",
+      "issuer": "did:local:396bd142ad7d08ce0ca8e49a1e09a1f4"
+    },
+    "previous_hash": "2938d1329fd0ee408423f3a43402c247a09f2d3dbd621505dc301d1fb547b451",
+    "hash": "8aaea8a534b7218124695eb304cf504fa1a51461f2842bf43c21505959fd17e3"
+  },
+  {
+    "index": 12,
+    "timestamp": "2026-10-13T15:41:13Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:d61e430a019e8f32fa3dcc07535bfdde",
+      "role": "issuer",
+      "did_document_hash": "b8e52178970b64a8b732c79a3270600625a5da49a53424c32e45f028008301aa"
+    },
+    "previous_hash": "8aaea8a534b7218124695eb304cf504fa1a51461f2842bf43c21505959fd17e3",
+    "hash": "229722f18ef649d351000d82042d2f8d3860273082dc25745d0aa467a1286905"
+  },
+  {
+    "index": 13,
+    "timestamp": "2026-10-13T15:41:13Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:92f3a172915ecf1430d83cb308ed0729",
+      "role": "holder",
+      "did_document_hash": "b12325da46fafc92ddd08b6e35a0703ae0efedafb951965d8e07c64ad41b7eeb"
+    },
+    "previous_hash": "229722f18ef649d351000d82042d2f8d3860273082dc25745d0aa467a1286905",
+    "hash": "01ae7d265ed70ae203784d3a159b2c4c005204e5475d72badacb853cb202f502"
+  },
+  {
+    "index": 14,
+    "timestamp": "2026-10-13T15:41:14Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261013-0e64f8a0",
+      "credential_hash": "8a874d894a766f951f57447f99253f2e430593fc198a57f2a558045f8e1f972e",
+      "issuer": "did:local:d61e430a019e8f32fa3dcc07535bfdde"
+    },
+    "previous_hash": "01ae7d265ed70ae203784d3a159b2c4c005204e5475d72badacb853cb202f502",
+    "hash": "ac1033b9d284b065c7142086e360648dc22d237ca33ce1c616224a8d103e5218"
+  },
+  {
+    "index": 15,
+    "timestamp": "2026-10-13T15:41:43Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:4959dbf6f93dca7bde83ef7b47c4fd3b",
+      "role": "issuer",
+      "did_document_hash": "89e616f83c296ff1bed1d06453f335432ad3911f4c2dc6ac995134870d8e4abc"
+    },
+    "previous_hash": "ac1033b9d284b065c7142086e360648dc22d237ca33ce1c616224a8d103e5218",
+    "hash": "9fe19746bf67d6c7c69388e88ad64f72fb2a9937eb6165bde5864a66da68c90a"
+  },
+  {
+    "index": 16,
+    "timestamp": "2026-10-13T15:43:03Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261013-40a2ca6c",
+      "credential_hash": "4b5eabcbb0cfe4bbc70c83424cb47e4ab197b757b64b0930d8e48c819799bf29",
+      "issuer": "did:local:1ac04f379b2cbc805545d4f14d3edf02"
+    },
+    "previous_hash": "9fe19746bf67d6c7c69388e88ad64f72fb2a9937eb6165bde5864a66da68c90a",
+    "hash": "811231418bd262a0337a665bffc5cb5a00ac2c27c6335a7b72069662e5aad2fb"
+  },
+  {
+    "index": 17,
+    "timestamp": "2026-10-14T05:37:30Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:435965760f5b658161d55b0a862dce90",
+      "role": "issuer",
+      "did_document_hash": "74d85c5c4ba6434c38dd40ba1d16b65017ba64e7d36c712a2a504eeff42e8dc3"
+    },
+    "previous_hash": "811231418bd262a0337a665bffc5cb5a00ac2c27c6335a7b72069662e5aad2fb",
+    "hash": "e9ef48638af30b161c6cbab8ebda6a3b74afa976e30fb0ca7d4b5239444dd757"
+  },
+  {
+    "index": 18,
+    "timestamp": "2026-10-14T05:37:30Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:4963fe2af3efb916e8d27b18d960ed79",
+      "role": "holder",
+      "did_document_hash": "fba3abac75ebc180fd66a2fcf44fec1da0963b423f2108c59b6dce9eaa37e954"
+    },
+    "previous_hash": "e9ef48638af30b161c6cbab8ebda6a3b74afa976e30fb0ca7d4b5239444dd757",
+    "hash": "4e1b97618a7bb836993a1520f177bb1948fbd21200832358f9034884cee9af73"
+  },
+  {
+    "index": 19,
+    "timestamp": "2026-10-14T05:37:30Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261014-23c83a69",
+      "credential_hash": "0f43fed2c5d4b10a2821c07f022f12b906715dbb6925f1ce77fde6ef8c70e635",
+      "issuer": "did:local:435965760f5b658161d55b0a862dce90"
+    },
+    "previous_hash": "4e1b97618a7bb836993a1520f177bb1948fbd21200832358f9034884cee9af73",
+    "hash": "ba248cc6c733163dbcd1792c76e31a299d8564d8c29a42ee0d38701784b44c37"
+  },
+  {
+    "index": 20,
+    "timestamp": "2026-10-14T05:38:09Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:5cf2416e04db66659249881e6fbc58f8",
+      "role": "issuer",
+      "did_document_hash": "ad9396906200d97467ff9ac6e499a027da2e78615bfa1553dd9e3ad183c97aca"
+    },
+    "previous_hash": "ba248cc6c733163dbcd1792c76e31a299d8564d8c29a42ee0d38701784b44c37",
+    "hash": "a1d1f2bd5810c47782b80321531388e549ce6ba0462a19327392d1e877cf0e0d"
+  },
+  {
+    "index": 21,
+    "timestamp": "2026-10-14T05:38:26Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:b28ff338b8965c0ffc892c435336e410",
+      "role": "issuer",
+      "did_document_hash": "e399aca72b4a207a36d129453b1eb40a679030b030e6769f66ee894b71828cdd"
+    },
+    "previous_hash": "a1d1f2bd5810c47782b80321531388e549ce6ba0462a19327392d1e877cf0e0d",
+    "hash": "b536066cb43841c0792f1bc8b332a092b3402613ab91d6b585976617255e569a"
+  },
+  {
+    "index": 22,
+    "timestamp": "2026-10-14T05:38:26Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:962fedf3b5abdddf05938eab70e9d51a",
+      "role": "holder",
+      "did_document_hash": "18472767ddc73500f0a29e0e3a39f9cc136772e3fc8dfcc56912f6fb9a88884b"
+    },
+    "previous_hash": "b536066cb43841c0792f1bc8b332a092b3402613ab91d6b585976617255e569a",
+    "hash": "28a531046a1dc19e35ec21be1841208544c3d47a257f0f4958cfa0f8e2e81538"
+  },
+  {
+    "index": 23,
+    "timestamp": "2026-10-14T05:38:26Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261014-b24d5c60",
+      "credential_hash": "d819f94d7c281021991c8b2220acea48a8a257e13a81200014472be5a016ae3b",
+      "issuer": "did:local:b28ff338b8965c0ffc892c435336e410"
+    },
+    "previous_hash": "28a531046a1dc19e35ec21be1841208544c3d47a257f0f4958cfa0f8e2e81538",
+    "hash": "8d946b15b5f6dfa1f6303a2207e3c8cc8686894b98da371bd8af072b266da3e4"
+  },
+  {
+    "index": 24,
+    "timestamp": "2026-10-14T05:55:19Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:73bb2272c8888f89b001f21fbb5c33fd",
+      "role": "issuer",
+      "did_document_hash": "9c4b9fffc16f130a1de47557ef626e79e60a52d94c8b910a1e541e37f591f59e"
+    },
+    "previous_hash": "8d946b15b5f6dfa1f6303a2207e3c8cc8686894b98da371bd8af072b266da3e4",
+    "hash": "d290ba2b30ccb0bc2f4d8ecad292ac380ffa86c981612b0a74e4cafd1922548c"
+  },
+  {
+    "index": 25,
+    "timestamp": "2026-10-14T05:55:19Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:a7f8278198c8497fded7e581e335424e",
+      "role": "holder",
+      "did_document_hash": "62978619189aafe74551e086a490a0da2f9d0db0e8bfb3f69b2d40152d5db156"
+    },
+    "previous_hash": "d290ba2b30ccb0bc2f4d8ecad292ac380ffa86c981612b0a74e4cafd1922548c",
+    "hash": "646c81eebdea547bb63e1155cc18b492a68c74406544558e63c06bb283bfe5c9"
+  },
+  {
+    "index": 26,
+    "timestamp": "2026-10-14T05:55:19Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261014-cf69a1f1",
+      "credential_hash": "faa6b11de2926dac8f5e055581264ae55153048704470ca5c71585eff13407da",
+      "issuer": "did:local:73bb2272c8888f89b001f21fbb5c33fd"
+    },
+    "previous_hash": "646c81eebdea547bb63e1155cc18b492a68c74406544558e63c06bb283bfe5c9",
+    "hash": "b62d59d1d8d63f6d233cbe21783add00459b422c8ec0da95a0d740668c8c2e75"
+  },
+  {
+    "index": 27,
+    "timestamp": "2026-10-14T05:56:17Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:bf9808d87d178419a0736ee9b9f951c4",
+      "role": "issuer",
+      "did_document_hash": "8db2d30a8c7bb41a558b1aa33bada8ccaf1b02a1cd209ce2d2a14dcc0a4a968f"
+    },
+    "previous_hash": "b62d59d1d8d63f6d233cbe21783add00459b422c8ec0da95a0d740668c8c2e75",
+    "hash": "83ff3fc460d64464e3d10b3f5f6caa094b492f10413d830fa81cb06589b1732f"
+  },
+  {
+    "index": 28,
+    "timestamp": "2026-10-14T05:56:17Z",
+    "type": "DID_REGISTERED",
+    "data": {
+      "did": "did:local:470055b679c050b438ef584e3c19462d",
+      "role": "holder",
+      "did_document_hash": "5a51a8884791d40fe860e544172915562cc6eb90ee7b102cc07aa31ab55ba115"
+    },
+    "previous_hash": "83ff3fc460d64464e3d10b3f5f6caa094b492f10413d830fa81cb06589b1732f",
+    "hash": "50e536c1bb55022b06335d9b9115f300320914795afdab1271232fe92858fd22"
+  },
+  {
+    "index": 29,
+    "timestamp": "2026-10-14T05:56:17Z",
+    "type": "CREDENTIAL_ISSUED",
+    "data": {
+      "credential_id": "cred-20261014-d58d5fc5",
+      "credential_hash": "8e8ddc1ab2362e9af9900675424130b9d500bd1d85d2718ceac1e68ea37d0ce3",
+      "issuer": "did:local:bf9808d87d178419a0736ee9b9f951c4"
+    },
+    "previous_hash": "50e536c1bb55022b06335d9b9115f300320914795afdab1271232fe92858fd22",
+    "hash": "3ad5b9257ea4889dce0b99ffd51812bd9b1350935c121581c1f5b427e52b9ad4"
+  },
+  {
+    "index": 30,
+    "timestamp": "2026-10-14T05:57:28Z",
+    "type": "CREDENTIAL_REVOKED",
+    "data": {
+      "credential_id": "cred-20261013-40a2ca6c",
+      "issuer": "did:local:1ac04f379b2cbc805545d4f14d3edf02",
+      "signature": "f36afc3ef762049c5978835a78022c1bf31e382a408de56c3ac890f55ffcdf3797cb799db4a291776f8df16210299127e4ddb6036d645547712108a237904a0e"
+    },
+    "previous_hash": "3ad5b9257ea4889dce0b99ffd51812bd9b1350935c121581c1f5b427e52b9ad4",
+    "hash": "4ccef3b92bf33ba4ffb8683be9d137cb1b8920dcb981848166ae191734dfc8fa"
+  }
+]

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Verify credential{% endblock %}
+{% block content %}
+<header class="page-h"><span class="step-tag">Step 3</span><h1>Verify a credential</h1>
+<p class="lead">Paste a credential, upload a file or pick a saved one. The verifier only uses public information.</p></header>
+
+<div class="grid2 verify-grid">
+  <section class="card">
+    <div class="row between">
+      <label class="field inline"><span>Load a saved credential</span>
+        <select id="saved"><option value="">Choose…</option>
+          {% for c in credentials %}<option value="{{ c.credential_id }}">{{ c.subject_name }} · {{ c.course }}{{ ' (revoked)' if c.revoked }}</option>{% endfor %}
+        </select></label>
+      <label class="btn ghost sm file">Upload .json<input type="file" id="file" accept=".json,application/json" hidden></label>
+    </div>
+    <label class="field"><span>Credential JSON</span>
+      <textarea id="cred-text" rows="16" spellcheck="false" placeholder='{ "credential_id": "cred-…", … }'></textarea></label>
+    <div class="row">
+      <button class="btn primary" id="verify-btn">Verify</button>
+      <button class="btn ghost" id="tamper-btn" title="Changes the student ID in the box above, without re-signing">Tamper with it (demo)</button>
+    </div>
+    <p class="hint" id="tamper-hint">Tip: verify first, then tamper, then verify again to see the checks fail.</p>
+  </section>
+
+  <section id="verify-out" class="card out" aria-live="polite">
+    <div class="empty slim"><h3>Result appears here</h3><p>You'll see each of the 8 checks and why it passed or failed.</p></div>
+  </section>
+</div>
+{% endblock %}

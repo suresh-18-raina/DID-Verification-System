@@ -1,0 +1,22 @@
+{
+  "id": "did:local:d61e430a019e8f32fa3dcc07535bfdde",
+  "created": "2026-10-13T15:41:13Z",
+  "profile": {
+    "name": "Greenfield University",
+    "role": "issuer"
+  },
+  "verificationMethod": [
+    {
+      "id": "did:local:d61e430a019e8f32fa3dcc07535bfdde#key-1",
+      "type": "Ed25519VerificationKey",
+      "controller": "did:local:d61e430a019e8f32fa3dcc07535bfdde",
+      "publicKeyHex": "bbf07d42ce36abf7f2d0310948295b23913298952b38fdcd8cd92cfaad377601"
+    }
+  ],
+  "authentication": [
+    "did:local:d61e430a019e8f32fa3dcc07535bfdde#key-1"
+  ],
+  "assertionMethod": [
+    "did:local:d61e430a019e8f32fa3dcc07535bfdde#key-1"
+  ]
+}

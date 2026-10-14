@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Create identity{% endblock %}
+{% block content %}
+<header class="page-h"><span class="step-tag">Step 1</span><h1>Create an identity</h1>
+<p class="lead">An identity is a name plus a freshly generated Ed25519 key pair. Pick the role it will play.</p></header>
+
+<div class="grid2">
+  <form id="identity-form" class="card" novalidate>
+    <label class="field"><span>Name</span>
+      <input name="name" maxlength="80" placeholder="e.g. Greenfield University or Asha Rao" required autocomplete="off">
+      <em>An organisation for issuers, a person for holders.</em></label>
+    <fieldset class="field">
+      <legend>Role</legend>
+      <label class="choice"><input type="radio" name="role" value="issuer" checked>
+        <span><b>Issuer</b>An organisation that signs credentials (a university, for example).</span></label>
+      <label class="choice"><input type="radio" name="role" value="holder">
+        <span><b>Holder</b>A person who receives and shows credentials (a student).</span></label>
+    </fieldset>
+    <button class="btn primary" type="submit">Generate keys and DID</button>
+  </form>
+
+  <div id="identity-result" class="card result" hidden></div>
+  <div id="identity-help" class="card muted-card">
+    <h3>What happens when you click</h3>
+    <ol class="plain">
+      <li>An Ed25519 private and public key are generated.</li>
+      <li>The DID is a hash of the public key, so only the key owner can prove it.</li>
+      <li>A DID Document (public key only) is saved as a JSON file.</li>
+      <li>The private key is saved as <code>private_key.pem</code> and is never shown or sent.</li>
+      <li>A fingerprint of the DID Document is written to the ledger.</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
